@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+   	<head>
+   		<title>Encriptador</title>
+   		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   		<link rel="stylesheet" href="./style/style.css">
+
+            
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   	</head>
+
+   	<body>
+   	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/logic.js"></script>
+   		<nav>
+    		<div class="nav-wrapper">
+      			<ul class="left hide-on-med-and-down">
+        			<li><a href="#">Encrypt</a></li>
+      			</ul>
+    		</div>
+  		</nav>
+   		<div id="central" class="row">
+   			<div class="col s8">
+   				<div class="container">
+   						<div class="row"><br><br><br><br><br><br><br></div>
+    					<form class="col s12">
+      						<div class="row">
+        						<div class="input-field col s12">
+          							<i class="material-icons prefix">mode_edit</i>
+          							<textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          							<label for="icon_prefix2">Introduce el mensaje a cifrar o decifrar</label>
+        						</div>
+      						</div>
+    					</form>
+   					<div class="row">
+   						<div class="container">
+   						<a class="waves-effect waves-light btn-large" onclick="func_encriptar()">
+      						<i class="material-icons left">security</i>Encriptar
+      					</a>
+      					<a class="waves-effect waves-light btn-large right" onclick="func_desencriptar()">
+							<i class="material-icons left">vpn_key</i>Desencriptar
+						</a>
+      					</div>
+					</div>
+				</div>
+   			</div>
+      		<div class="col s4">
+      			<div class="container">
+      				<div class="row"><br><br><br><br><br><br></div>
+      				<p id="resultado" class="flow-text">Aun no se a ingresado un texto para encriptar</p>
+      				<div class="row">
+      					<a id="copiar" class="waves-effect waves-light btn-large disabled" onclick="copiar_texto()">
+							<i class="material-icons left">content_copy</i>Copiar
+						</a>
+      				</div>
+      			</div>
+      		</div>
+      	</div>
+   	</body>
+   	 <footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container">
+            Creado en Agosto 2024
+            <p class="grey-text text-lighten-4 right">Proyecto de Rocio Sanillan.</p>
+            </div>
+          </div>
+        </footer>
+            
+
+</html>
